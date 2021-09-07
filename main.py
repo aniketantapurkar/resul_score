@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 
 def Average_main():
-    if request.method != "POST":
+    if request.method== "POST":
         resp = request.form
         stud_nm = resp.get('nm')
 
