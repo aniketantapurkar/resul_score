@@ -2,7 +2,7 @@ from flask import Flask,request,render_template
 app = Flask(__name__)
 
 
-@app.route(methods =["GET","POST"])
+@app.route(methods =["POST"])
 
 
 def Average_main():
@@ -31,6 +31,3 @@ def Average_main():
 
 if __name__=="__main__":
     app.run(debug=True)
-
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
