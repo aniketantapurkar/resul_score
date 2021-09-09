@@ -5,5 +5,4 @@ itsdangerous
 Werkzeug
 MarkupSafe
 Jinja2
-Flask
 gunicorn
