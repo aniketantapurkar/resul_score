@@ -26,7 +26,7 @@ def Average_main():
 
         return render_template("result.html",resp=result,num1=a,num2=b,num3=c,num4=d,num5=e,nm=stud_nm)
     else:
-        return render_template("input.html")
+        return render_template("index.html")
 
 
 if __name__=="__main__":
