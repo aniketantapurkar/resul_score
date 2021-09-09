@@ -1,2 +1,9 @@
 Flask==2.0.1
 gunicorn
+click
+itsdangerous
+Werkzeug
+MarkupSafe
+Jinja2
+Flask
+gunicorn
