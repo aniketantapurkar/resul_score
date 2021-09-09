@@ -1,12 +1,9 @@
-from flask import Flask,request,render_template
+from flask import Flask, request, render_template
 app = Flask(__name__)
 
-
-@app.route("/",methods=["GET","POST"])
-
-
+@app.route("/", methods=["GET", "POST"])
 def Average_main():
-    if request.method=="POST":
+    if request.method == "POST":
         resp = request.form
         stud_nm = resp.get('nm')
 
@@ -21,13 +18,12 @@ def Average_main():
         d = int(d)
         e = int(e)
 
+        result = ((a + b + c + d + e) / 5)
 
-        result = ((a+b+c+d+e)/5)
-
-        return render_template("result.html",resp=result,num1=a,num2=b,num3=c,num4=d,num5=e,nm=stud_nm)
+        return render_template("result.html", resp=result, num1=a, num2=b, num3=c, num4=d, num5=e, nm=stud_nm)
     else:
         return render_template("index.html")
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     app.run(debug=True)
